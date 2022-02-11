@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(87, 139, 132, 0.1);
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.movie-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.movies__heading {
+  text-align: center;
+  color: black;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.bookmarks__btn {
+  position: absolute;
+  right: -70px;
+  top: 15px;
+  width: 150px;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #fff;
+  border: 4px solid dimgray;
+  color: black;
+  border-radius: 5px;
+}
+
+.form {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.form__input {
+  padding: 10px 13px;
+  margin: 0 15px;
+  border: 3px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form__input::placeholder {
+  color: black;
+}
+
+.genres-select {
+  padding: 10px 13px;
+  margin: 0 15px;
+  border: 3px solid black;
+  border-radius: 5px;
+  color: black;
+}
+
+.form__btn {
+  padding: 10px 13px;
+  margin: 0 15px;
+  border: 3px solid black;
+  color: black;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.movies__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.movies__list-item:not(:nth-child(4n)) {
+  margin-right: 20px;
+}
+
+.movies__list-item {
+  max-width: 300px;
+  height: 860px;
+  border: 2px solid black;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.movies__list-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.genre-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 18px;
+}
+
+.item-btn {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  left: 10px;
+  border: 3px solid peru;
+}
+
+.bookmark-btn {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  border: 3px solid peru;
+}
+
+.movie-title {
+  color: black;
+  font-size: 20px;
+}
+
+.movie-year {
+  color: black;
+  font-size: 18px;
+  margin-bottom: auto;
+}
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__content {
+  position: relative;
+  z-index: 1;
+  max-width: 550px;
+  width: 100%;
+  padding: 30px 20px;
+  color: black;
+  background-color: #fff;
+}
+
+.modal__text {
+  font-size: 20px;
+}
+
+.modal__btn {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  right: 5px;
+  background-color: #fff;
+  color: red;
+}
+
+/* Bookmark Modal Style */
+.bookmark-modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bookmark-modal-content {
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: dimgray;
+  height: 100vh;
+}
+
+.bookmark-modal-content h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.bookmark-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bookmark-item {
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid white;
+}
+
+.remove-btn{
+  width: 100px;
+  background-color: #fff;
+  color: red;
+}
+
+.modal__open {
+  display: flex;
+}
